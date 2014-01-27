@@ -39,6 +39,7 @@ class LunchesController < ApplicationController
 	def update
 		@lunch = Lunch.find(params[:id])
 		@lunch.owner = params[:owner]
+		@lunch.meal_name = params[:meal_name]
 		@lunch.calories = params[:calories]
 		@lunch.photo_url = params[:photo_url]
 		@lunch.spiciness = params[:spiciness]
