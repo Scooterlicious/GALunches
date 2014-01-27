@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140127184737) do
+ActiveRecord::Schema.define(:version => 20140127194405) do
 
   create_table "lunches", :force => true do |t|
     t.string   "owner",      :default => "me"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20140127184737) do
     t.string   "photo_url",  :default => "http://placekitten.com/200/200"
     t.datetime "created_at",                                               :null => false
     t.datetime "updated_at",                                               :null => false
+    t.string   "meal_name"
   end
 
 end
