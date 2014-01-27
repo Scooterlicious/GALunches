@@ -18,16 +18,26 @@ class LunchesController < ApplicationController
 #Sarah 	
 # edit_lunch GET    /lunches/:id/edit(.:format) lunches#edit
 	def edit
+		@lunch = Lunch.find(params[:id])
 	end
 
 # Scooter	
 #      lunch GET    /lunches/:id(.:format)      lunches#show
 	def show
+
 	end
 
 #Sarah 
 #            PUT    /lunches/:id(.:format)      lunches#update
 	def update
+		@lunch = Lunch.find(params[:id])
+		@lunch.owner = params[:owner]
+		@lunch.calories = params[:calories]
+		@lunch.photo_url = params[:photo_url]
+		@lunch.spiciness = params[:spiciness]
+		@lunch.repeatable = params[:repeatable].to_boolean
+		@lunch.save
+		redirect to lunch_path(@lunch)
 	end
 
 #Scooter #May need to use form helper

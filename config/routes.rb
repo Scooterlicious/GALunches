@@ -2,6 +2,8 @@ GaLunches::Application.routes.draw do
   resources :lunches
   root :to => 'lunches#index'
   '/scooter/new' :to => 'lunches#scooternew'
+
+  post '/lunch/:id' => 'lunches#update'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
