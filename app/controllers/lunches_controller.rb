@@ -31,11 +31,7 @@ class LunchesController < ApplicationController
 # Scooter	
 #      lunch GET    /lunches/:id(.:format)      lunches#show
 	def show
-<<<<<<< HEAD
-
-=======
 		@lunch = Lunch.find(params[:id])
->>>>>>> cb9d06f9bdf200e8f5782fe6f86e9f5d3168f1f8
 	end
 
 #Sarah 
