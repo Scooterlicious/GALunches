@@ -30,6 +30,7 @@ class LunchesController < ApplicationController
 # Scooter	
 #      lunch GET    /lunches/:id(.:format)      lunches#show
 	def show
+		@lunch = Lunch.find(params[:id])
 	end
 
 #Sarah 
