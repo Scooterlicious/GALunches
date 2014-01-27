@@ -6,8 +6,16 @@ class LunchesController < ApplicationController
 	
 # Lena	
 #            POST   /lunches(.:format)          lunches#create
-	def create
-	end
+  def create
+    Lunch.create(name:       params[:name], 
+    						 calories:   params[:calories], 
+    						 owner:      params[:owner], 
+    						 photo_url:  params[:photo_url], 
+    						 repeatable: params[:repeatable], 
+    						 spiciness:  params[:spiciness]
+    						 )
+    redirect_to lunches_path
+  end
 	
 #Lena
 #  new_lunch GET    /lunches/new(.:format)      lunches#new
