@@ -7,8 +7,15 @@ class LunchesController < ApplicationController
 	
 # Lena	
 #            POST   /lunches(.:format)          lunches#create
-	def create
-	end
+  def create
+    Lunch.create(calories:   params[:calories], 
+    						 owner:      params[:owner], 
+    						 photo_url:  params[:photo_url], 
+    						 repeatable: params[:repeatable], 
+    						 spiciness:  params[:spiciness]
+    						 )
+    redirect_to lunches_path
+  end
 	
 #Lena
 #  new_lunch GET    /lunches/new(.:format)      lunches#new
@@ -24,7 +31,11 @@ class LunchesController < ApplicationController
 # Scooter	
 #      lunch GET    /lunches/:id(.:format)      lunches#show
 	def show
+<<<<<<< HEAD
 
+=======
+		@lunch = Lunch.find(params[:id])
+>>>>>>> cb9d06f9bdf200e8f5782fe6f86e9f5d3168f1f8
 	end
 
 #Sarah 
