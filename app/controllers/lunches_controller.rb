@@ -42,9 +42,9 @@ class LunchesController < ApplicationController
 		@lunch.calories = params[:calories]
 		@lunch.photo_url = params[:photo_url]
 		@lunch.spiciness = params[:spiciness]
-		@lunch.repeatable = params[:repeatable].to_boolean
+		@lunch.repeatable = params[:repeatable]
 		@lunch.save
-		redirect to lunch_path(@lunch)
+		redirect_to lunch_path(@lunch)
 	end
 
 #Scooter #May need to use form helper

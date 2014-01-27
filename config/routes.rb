@@ -3,8 +3,8 @@ GaLunches::Application.routes.draw do
   root :to => 'lunches#index'
 
   get '/scooter/new', to: 'lunches#scooternew'
-  
-  post '/lunch/:id', to: 'lunches#update'
+
+  post '/lunches/:id', to: 'lunches#update'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
