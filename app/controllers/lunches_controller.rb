@@ -2,6 +2,7 @@ class LunchesController < ApplicationController
 #Scooter
 #    lunches GET    /lunches(.:format)          lunches#index
 	def index
+		@lunches = Lunch.all
 	end
 	
 # Lena	
