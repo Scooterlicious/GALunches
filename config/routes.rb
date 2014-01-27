@@ -2,7 +2,7 @@ GaLunches::Application.routes.draw do
   resources :lunches
   root :to => 'lunches#index'
 
-  get '/scooter/new', to: 'lunches#scooternew'
+  # get '/scooter/new', to: 'lunches#scooternew'
   
   post '/lunch/:id', to: 'lunches#update'
 
