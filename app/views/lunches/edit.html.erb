@@ -1,4 +1,6 @@
 <form action="<%= lunch_path(@lunch)%>" method="post">
+	<p>What's it called?</p>
+	<input type="text" name="meal_name" value="<%= @lunch.meal_name	%>">
 	<p>How spicy is it?</p>
 	<input type="range" name="spiciness" max="10" min="0" value="<%= @lunch.spiciness	%>">
 	<p>Who owns it?</p>
