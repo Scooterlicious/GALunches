@@ -8,8 +8,7 @@ class LunchesController < ApplicationController
 # Lena	
 #            POST   /lunches(.:format)          lunches#create
   def create
-    Lunch.create(name:       params[:name], 
-    						 calories:   params[:calories], 
+    Lunch.create(calories:   params[:calories], 
     						 owner:      params[:owner], 
     						 photo_url:  params[:photo_url], 
     						 repeatable: params[:repeatable], 
