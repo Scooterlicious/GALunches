@@ -4,13 +4,15 @@
 		<th>Repeatable</th>
 		<th>Spiciness</th>
 	</tr>
-	<% @lunches.each do |lunch| %>
-		<tr>
-			<td>
-				<a href src="<%= lunch.photo_url %>"><%= lunch.owner %>'s lunch</a>
-			</td>
-			<td><%= lunch.repeatable %></td>
-			<td><%= lunch.spiciness %></td>
-		</tr>
+	<% if @lunches %>
+		<% @lunches.each do |lunch| %>
+			<tr>
+				<td>
+					<a href src="<%= lunch.photo_url %>"><%= lunch.owner %>'s lunch</a>
+				</td>
+				<td><%= lunch.repeatable %></td>
+				<td><%= lunch.spiciness %></td>
+			</tr>
+		<% end %>
 	<% end %>
 </table>
