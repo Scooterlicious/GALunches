@@ -1,4 +1,4 @@
-<form action="/lunches" method="post">
+<form action="<%= new_lunch_path %>" method="post">
   <label for="owner">Add a lunch: </label>
   <input type="text" name="owner" placeholder="ramen"><br>
 
@@ -6,9 +6,9 @@
   <input type="text" name="calories" placeholder="500"><br>
 
   <p>Would you eat it again?</p>
-  <input type="radio" name="repeatable" value="true" <% if @lunch.repeatable == true %> selected <% end %> >
+  <input type="radio" name="repeatable" value="true">
   <label for="true">Hell Ya</label>
-  <input type="radio" name="repeatable" value="false" <% if @lunch.repeatable == false %> selected <% end %> >
+  <input type="radio" name="repeatable" value="false">
   <label for="false">Hell No</label>
 
   <label for="calories">Spiciness: </label>
@@ -16,7 +16,7 @@
 
   <label for="photo_url">Photo URL: </label>
   <input type="text" name="photo_url"><br>
-
+  <input type="submit">
 </form>
 
 
