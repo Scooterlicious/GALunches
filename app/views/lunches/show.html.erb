@@ -1,14 +1,14 @@
-<table>
-	<tr>
-		<th>Picture</th>
-		<th>Repeatable</th>
-		<th>Spiciness</th>
-	</tr>
-	<tr>
-		<td>
-			<a href src="<%= @lunch.photo_url %>"><%= @lunch.owner %>'s lunch</a>
-		</td>
-		<td><%= @lunch.repeatable %></td>
-		<td><%= @lunch.spiciness %></td>
-	</tr>
-</table>
+<h1><%= @lunch.meal_name %></h1>
+<h4><%= @lunch.owner %>'s lunch</h4>
+<img src="<%= @lunch.photo_url %>">
+			
+		<% if @lunch.repeatable %>
+		<p>YOU SHOULD EAT THIS!!!</p>
+		<% else  %>
+		<p>DON'T BOTHER EATING THIS</p>
+		<% end  %>
+		<p>How spicy is it?</p>
+		<%= @lunch.spiciness %>
+		<br>
+
+<a href="<%= lunches_path %>">GO BACK</a>
