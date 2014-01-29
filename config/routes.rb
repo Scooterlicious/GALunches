@@ -7,6 +7,8 @@ GaLunches::Application.routes.draw do
 
   post '/lunches/:id', to: 'lunches#update'
 
+  get '/lunches/:id/delete', to: 'lunches#destroy'
+
   # get '/scooter/new', to: 'lunches#scooternew'
   
 
