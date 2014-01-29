@@ -20,6 +20,7 @@ class LunchesController < ApplicationController
 #Lena
 #  new_lunch GET    /lunches/new(.:format)      lunches#new
 	def new
+
 	end
 
 #Sarah 	
