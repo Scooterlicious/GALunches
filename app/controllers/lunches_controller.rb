@@ -52,6 +52,9 @@ class LunchesController < ApplicationController
 #Scooter #May need to use form helper
 #            DELETE /lunches/:id(.:format)      lunches#destroy
 	def destroy
+		@lunch = Lunch.find(params[:id])
+		@lunch.destroy
+		redirect_to lunches_path
 	end 
 
 end

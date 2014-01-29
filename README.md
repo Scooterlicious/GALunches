@@ -8,6 +8,8 @@ CRUD app; collaboration.  Sarah is a wizard with telekinesis and x-ray vision, L
 
 ^^^ lena is a baby bear? how dare you question me?!
 
+...and TWICE as furry!
+
 
 MORE THINGZ
 

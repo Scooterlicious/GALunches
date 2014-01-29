@@ -6,9 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Lunch.create({
-	spiciness: '5',
-	owner: 'me',
-	repeatable: true,
-	calories: 1000
-})
+10.times do |x|
+	Lunch.create({
+		spiciness: x,
+		owner: 'me',
+		repeatable: true,
+		calories: 1000
+	})
+end
