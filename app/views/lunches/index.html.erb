@@ -14,14 +14,14 @@
 		<% @lunches.each do |lunch| %>
 			<tr>
 				<td>
-					<a href="/lunches/<%= lunch.id %>/edit"><%= lunch.meal_name %></a>
+					<a href="/lunches/<%= lunch.id %>"><%= lunch.meal_name %></a>
 				</td>
 				<td><%= lunch.owner %></td>
 				<td><%= lunch.repeatable %></td>
 				<td><%= lunch.spiciness %></td>
 				<td><%= lunch.calories %></td>
-				<td><a href="lunches/<%= lunch.id %>/edit">Edit</a></td>
-				<td><a href="lunches/<%= lunch.id %>/delete">Delete</a></td>
+				<td><a href="/lunches/<%= lunch.id %>/edit">Edit</a></td>
+				<td><a href="/lunches/<%= lunch.id %>/delete">Delete</a></td>
 			</tr>
 		<% end %>
 	<% end %>
