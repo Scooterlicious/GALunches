@@ -2,10 +2,11 @@
 	<a href="/lunches/new">Add New</a>
 
 	<tr>
-		<th>Lunch</th>
-		<th>Owner</th>
-		<th>Repeatable</th>
-		<th>Spiciness</th>
+		<th><a href="/lunches/sort_by/meal_name">Lunch<a/></th>
+		<th><a href="/lunches/sort_by/owner">Owner</a></th>
+		<th><a href="/lunches/sort_by/repeatable">Repeatable</a></th>
+		<th><a href="/lunches/sort_by/spiciness">Spiciness</a></th>
+		<th><a href="/lunches/sort_by/calories">Calories</a></th>
 		<th> </th>
 		<th> </th>
 	</tr>
@@ -18,6 +19,7 @@
 				<td><%= lunch.owner %></td>
 				<td><%= lunch.repeatable %></td>
 				<td><%= lunch.spiciness %></td>
+				<td><%= lunch.calories %></td>
 				<td><a href="lunches/<%= lunch.id %>/edit">Edit</a></td>
 				<td><a href="lunches/<%= lunch.id %>/delete">Delete</a></td>
 			</tr>
