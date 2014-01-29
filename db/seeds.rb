@@ -11,6 +11,7 @@
 		spiciness: x,
 		owner: 'me',
 		repeatable: true,
-		calories: 1000
+		calories: 1000,
+		meal_name: ['ramen', 'burger', 'salad', 'fruit', 'bibimbap', 'curry'].sample
 	})
 end
