@@ -1,4 +1,5 @@
-<div></div><table>
+<table>
+	<a href="/lunches/new">Add New</a>
 	<tr>
 		<th>Picture</th>
 		<th>Repeatable</th>
@@ -12,6 +13,7 @@
 				</td>
 				<td><%= lunch.repeatable %></td>
 				<td><%= lunch.spiciness %></td>
+				<td><a href="lunches/<%= lunch.id %>/edit">Edit</a></td>
 			</tr>
 		<% end %>
 	<% end %>
