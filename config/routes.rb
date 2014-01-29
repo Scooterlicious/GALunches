@@ -9,6 +9,9 @@ GaLunches::Application.routes.draw do
 
   get '/lunches/:id/delete', to: 'lunches#destroy'
 
+  get '/lunches/sort_by/:sort_by', to: 'lunches#index'
+
+
   # get '/scooter/new', to: 'lunches#scooternew'
   
 

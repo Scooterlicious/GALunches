@@ -3,6 +3,20 @@ class LunchesController < ApplicationController
 #    lunches GET    /lunches(.:format)          lunches#index
 	def index
 		@lunches = Lunch.all
+
+		case params[:sort_by]
+			when 'calories'
+				@lunches = Lunch.find(:all, :order => "calories")
+			when 'owner'
+				@lunches = Lunch.find(:all, :order => "owner")
+			when 'repeatable'
+				@lunches = Lunch.find(:all, :order => "repeatable")
+
+			when 'spiciness'
+ 				@lunches = Lunch.find(:all, :order => "spiciness")
+			when 'meal_name'
+ 				@lunches = Lunch.find(:all, :order => "meal_name")
+		end
 	end
 	
 # Lena	
