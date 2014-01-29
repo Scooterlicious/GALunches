@@ -22,7 +22,7 @@ class LunchesController < ApplicationController
 # Lena	
 #            POST   /lunches(.:format)          lunches#create
   def create
-    Lunch.create(meal_name:   params[:meal_name], 
+    Lunch.create(meal_name:  params[:meal_name], 
     						 calories:   params[:calories], 
     						 owner:      params[:owner], 
     						 photo_url:  params[:photo_url], 
